@@ -18,7 +18,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 
 local Tab = Window:MakeTab({
 	Name = "febipass",
-	Icon = "rbxassetid://74522217830466",
+	Icon = "rbxassetid://100701908195142",
 	PremiumOnly = false
 })
 
@@ -29,7 +29,7 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "fe"
+	Name = "[🧾Script🧾]"
 })
 
 --[[
@@ -39,7 +39,7 @@ Name = <string> - The name of the section.
 OrionLib:MakeNotification({
 	Name = "enjoy the bypass!",
 	Content = "fe bypass",
-	Image = "rbxassetid://74522217830466",
+	Image = "rbxassetid://100701908195142",
 	Time = 10
 })
 
