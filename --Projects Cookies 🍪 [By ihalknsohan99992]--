@@ -1813,3 +1813,338 @@ Kl.TextColor3 = Color3.new(255, 255, 255)
 Kl.Font = Enum.Font.Code
 Kl.Parent = TextLabel
 Kl.TextSize = 24
+
+local Home = Instance.new("TextButton")
+Home.Size = UDim2.new(0.2, 9, 0.0, 29)
+Home.Position = UDim2.new(0.0, 0, 0.0, 29)
+Home.BackgroundColor3 = Color3.new(0, 0, 0)
+Home.BorderColor3 = Color3.new(0.5, 0, 1.0, 0)
+Home.BorderSizePixel = 3
+Home.Text = "Home"
+Home.BackgroundTransparency = 0 
+Home.TextColor3 = Color3.new(255, 255, 255)
+Home.Font = Enum.Font.Code
+Home.Parent = Ui
+Home.TextSize = 20
+ 
+local server = Instance.new("TextButton")
+server.Size = UDim2.new(0.2, 25, 0.0, 29)
+server.Position = UDim2.new(0.1, 58, 0.0, 29)
+server.BackgroundColor3 = Color3.new(0, 0, 0)
+server.BorderColor3 = Color3.new(0.5, 0, 1.0, 0)
+server.BorderSizePixel = 3
+server.Text = "Server/Local"
+server.BackgroundTransparency = 0 
+server.TextColor3 = Color3.new(255, 255, 255)
+server.Font = Enum.Font.Code
+server.Parent = Ui
+server.TextSize = 18
+ 
+local scr = Instance.new("TextButton")
+scr.Size = UDim2.new(0.2, 0, 0.0, 29)
+scr.Position = UDim2.new(0.3, 85, 0.0, 29)
+scr.BackgroundColor3 = Color3.new(0, 0, 0)
+scr.BorderColor3 = Color3.new(0.5, 0, 1.0, 0)
+scr.BorderSizePixel = 3
+scr.Text = "Scripts"
+scr.BackgroundTransparency = 0 
+scr.TextColor3 = Color3.new(255, 255, 255)
+scr.Font = Enum.Font.Code
+scr.Parent = Ui
+scr.TextSize = 19
+ 
+local exe = Instance.new("TextButton")
+exe.Size = UDim2.new(0.1, 34, 0.0, 29)
+exe.Position = UDim2.new(0.6, 39, 0.0, 29)
+exe.BackgroundColor3 = Color3.new(0, 0, 0)
+exe.BorderColor3 = Color3.new(0.5, 0, 1.0, 0)
+exe.BorderSizePixel = 3
+exe.Text = "Executor"
+exe.BackgroundTransparency = 0 
+exe.TextColor3 = Color3.new(255, 255, 255)
+exe.Font = Enum.Font.Code
+exe.Parent = Ui
+exe.TextSize = 19
+ 
+local out = Instance.new("TextButton")
+out.Size = UDim2.new(0.1, 15, 0.0, 29)
+out.Position = UDim2.new(0.8, 30, 0.0, 29)
+out.BackgroundColor3 = Color3.new(0, 0, 0)
+out.BorderColor3 = Color3.new(0.5, 0, 1.0)
+out.BorderSizePixel = 3
+out.Text = "Output"
+out.BackgroundTransparency = 0 
+out.TextColor3 = Color3.new(255, 255, 255)
+out.Font = Enum.Font.Code
+out.Parent = Ui
+out.TextSize = 19
+ 
+local Box = Instance.new("TextBox")
+Box.Size = UDim2.new(0.9, 35, 0.6, 15)
+Box.Position = UDim2.new(0.0, 5, 0.2, 0)
+Box.BackgroundColor3 = Color3.new(0, 0, 0)
+Box.BorderColor3 = Color3.new(0.5, 0, 1.0, 0)
+Box.BorderSizePixel = 3
+Box.Text = "Made by Executor scripts"
+Box.TextColor3 = Color3.new(1, 1, 1)
+Box.BackgroundTransparency = 0
+Box.Font = Enum.Font.Code
+Box.TextSize = 15
+Box.Parent = Ui
+Box.TextYAlignment = Enum.TextYAlignment.Top
+Box.TextXAlignment = Enum.TextXAlignment.Left
+Box.ClearTextOnFocus = failed
+Box.TextWrapped = true
+ 
+local execu = Instance.new("TextButton")
+execu.Size = UDim2.new(0.2, 0, 0.1, 0)
+execu.Position = UDim2.new(0.0, 5, 0.8, 27)
+execu.BackgroundColor3 = Color3.new(0, 0, 0)
+execu.BorderColor3 = Color3.new(0.5, 0, 1.0, 0)
+execu.BorderSizePixel = 3
+execu.Text = "Execute"
+execu.BackgroundTransparency = 0 
+execu.TextColor3 = Color3.new(255, 255, 255)
+execu.Font = Enum.Font.Code
+execu.Parent = Ui
+execu.TextSize = 19
+ 
+local clea = Instance.new("TextButton")
+clea.Size = UDim2.new(0.2, 0, 0.1, 0)
+clea.Position = UDim2.new(0.2, 19, 0.8, 27)
+clea.BackgroundColor3 = Color3.new(0, 0, 0)
+clea.BorderColor3 = Color3.new(0.5, 0, 1.0, 0)
+clea.BorderSizePixel = 3
+clea.Text = "Clear"
+clea.BackgroundTransparency = 0 
+clea.TextColor3 = Color3.new(255, 255, 255)
+clea.Font = Enum.Font.Code
+clea.Parent = Ui
+clea.TextSize = 19
+ 
+local Oppk = Instance.new("TextLabel")
+Oppk.Size = UDim2.new(0.2, 0, 0.1, 0)
+Oppk.Position = UDim2.new(0.5, 9, 0.8, 27)
+Oppk.BackgroundColor3 = Color3.new(0, 0, 0)
+Oppk.BorderColor3 = Color3.new(0, 0, 0)
+Oppk.BorderSizePixel = 0
+Oppk.Text = "Execute on :"
+Oppk.BackgroundTransparency = 1
+Oppk.TextColor3 = Color3.new(255, 255, 255)
+Oppk.Font = Enum.Font.Code
+Oppk.Parent = Ui
+Oppk.TextSize = 20
+ 
+local ll = Instance.new("TextLabel")
+ll.Size = UDim2.new(0.3, 0, 0.1, 0)
+ll.Position = UDim2.new(0.7, 0, 0.8, 27)
+ll.BackgroundColor3 = Color3.new(0, 0, 0)
+ll.BorderColor3 = Color3.new(0, 0, 0)
+ll.BorderSizePixel = 0
+ll.Text = "Server"
+ll.BackgroundTransparency = 1
+ll.TextColor3 = Color3.new(0, 1, 0)
+ll.Font = Enum.Font.Code
+ll.Parent = Ui
+ll.TextSize = 19
+ 
+---Scripts:
+ 
+X.MouseButton1Click:Connect(function()
+Ui:remove()
+end)
+ 
+clea.MouseButton1Click:Connect(function()
+Box.Text = ""
+end)
+ 
+execu.MouseButton1Click:Connect(function()
+assert(loadstring(Box.Text))()
+end)
+  	end    
+})
+ 
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+ 
+Tab:AddButton({
+	Name = "lazytown",
+	Callback = function()
+      		 imageOne = "http://www.roblox.com/asset/?id=110240864101518"
+imageTwo = "http://www.roblox.com/asset/?id=110240864101518"
+imageThree = "http://www.roblox.com/asset/?id=110240864101518"
+imageFour = "http://www.roblox.com/asset/?id=110240864101518"
+imageFive = "http://www.roblox.com/asset/?id=110240864101518"
+imageSix = "http://www.roblox.com/asset/?id=110240864101518"
+imageSeven = "http://www.roblox.com/asset/?id=110240864101518"
+imageEight = "http://www.roblox.com/asset/?id=110240864101518"
+Spooky = Instance.new("Sound", game.Workspace)
+Spooky.Name = "Spooky"
+Spooky.SoundId = "rbxassetid://18988381150"
+Spooky.Volume = 1500
+Spooky.Looped = true
+Spooky:Play()
+Sky = Instance.new("Sky", game.Lighting)
+Sky.SkyboxBk = imageOne
+Sky.SkyboxDn = imageOne
+Sky.SkyboxFt = imageOne
+Sky.SkyboxLf = imageOne
+Sky.SkyboxRt = imageOne
+Sky.SkyboxUp = imageOne
+while true do
+    Sky.SkyboxBk = imageOne
+    Sky.SkyboxDn = imageOne
+    Sky.SkyboxFt = imageOne
+    Sky.SkyboxLf = imageOne
+    Sky.SkyboxRt = imageOne
+    Sky.SkyboxUp = imageOne
+    wait(0.25)
+    Sky.SkyboxBk = imageTwo
+    Sky.SkyboxDn = imageTwo
+    Sky.SkyboxFt = imageTwo
+    Sky.SkyboxLf = imageTwo
+    Sky.SkyboxRt = imageTwo
+    Sky.SkyboxUp = imageTwo
+    wait(0.25)
+    Sky.SkyboxBk = imageThree
+    Sky.SkyboxDn = imageThree
+    Sky.SkyboxFt = imageThree
+    Sky.SkyboxLf = imageThree
+    Sky.SkyboxRt = imageThree
+    Sky.SkyboxUp = imageThree
+    wait(0.25)
+    Sky.SkyboxBk = imageFour
+    Sky.SkyboxDn = imageFour
+    Sky.SkyboxFt = imageFour
+    Sky.SkyboxLf = imageFour
+    Sky.SkyboxRt = imageFour
+    Sky.SkyboxUp = imageFour
+    wait(0.25)
+    Sky.SkyboxBk = imageFive
+    Sky.SkyboxDn = imageFive
+    Sky.SkyboxFt = imageFive
+    Sky.SkyboxLf = imageFive
+    Sky.SkyboxRt = imageFive
+    Sky.SkyboxUp = imageFive
+    wait(0.25)
+    Sky.SkyboxBk = imageSix
+    Sky.SkyboxDn = imageSix
+    Sky.SkyboxFt = imageSix
+    Sky.SkyboxLf = imageSix
+    Sky.SkyboxRt = imageSix
+    Sky.SkyboxUp = imageSix
+    wait(0.25)
+    Sky.SkyboxBk = imageSeven
+    Sky.SkyboxDn = imageSeven
+    Sky.SkyboxFt = imageSeven
+    Sky.SkyboxLf = imageSeven
+    Sky.SkyboxRt = imageSeven
+    Sky.SkyboxUp = imageSeven
+    wait(0.25)
+    Sky.SkyboxBk = imageEight
+    Sky.SkyboxDn = imageEight
+    Sky.SkyboxFt = imageEight
+    Sky.SkyboxLf = imageEight
+    Sky.SkyboxRt = imageEight
+    Sky.SkyboxUp = imageEight
+    wait(0.25)
+end
+  	end    
+})
+ 
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+ 
+Tab:AddButton({
+	Name = "spookyify",
+	Callback = function()
+      		imageOne = "http://www.roblox.com/asset/?id=169585459"
+imageTwo = "http://www.roblox.com/asset/?id=169585475"
+imageThree = "http://www.roblox.com/asset/?id=169585485"
+imageFour = "http://www.roblox.com/asset/?id=169585502"
+imageFive = "http://www.roblox.com/asset/?id=169585515"
+imageSix = "http://www.roblox.com/asset/?id=169585502"
+imageSeven = "http://www.roblox.com/asset/?id=169585485"
+imageEight = "http://www.roblox.com/asset/?id=169585475"
+Spooky = Instance.new("Sound", game.Workspace)
+Spooky.Name = "Spooky"
+Spooky.SoundId = "rbxassetid://4808613510"
+Spooky.Volume = 1500
+Spooky.Looped = true
+Spooky:Play()
+Sky = Instance.new("Sky", game.Lighting)
+Sky.SkyboxBk = imageOne
+Sky.SkyboxDn = imageOne
+Sky.SkyboxFt = imageOne
+Sky.SkyboxLf = imageOne
+Sky.SkyboxRt = imageOne
+Sky.SkyboxUp = imageOne
+while true do
+    Sky.SkyboxBk = imageOne
+    Sky.SkyboxDn = imageOne
+    Sky.SkyboxFt = imageOne
+    Sky.SkyboxLf = imageOne
+    Sky.SkyboxRt = imageOne
+    Sky.SkyboxUp = imageOne
+    wait(0.25)
+    Sky.SkyboxBk = imageTwo
+    Sky.SkyboxDn = imageTwo
+    Sky.SkyboxFt = imageTwo
+    Sky.SkyboxLf = imageTwo
+    Sky.SkyboxRt = imageTwo
+    Sky.SkyboxUp = imageTwo
+    wait(0.25)
+    Sky.SkyboxBk = imageThree
+    Sky.SkyboxDn = imageThree
+    Sky.SkyboxFt = imageThree
+    Sky.SkyboxLf = imageThree
+    Sky.SkyboxRt = imageThree
+    Sky.SkyboxUp = imageThree
+    wait(0.25)
+    Sky.SkyboxBk = imageFour
+    Sky.SkyboxDn = imageFour
+    Sky.SkyboxFt = imageFour
+    Sky.SkyboxLf = imageFour
+    Sky.SkyboxRt = imageFour
+    Sky.SkyboxUp = imageFour
+    wait(0.25)
+    Sky.SkyboxBk = imageFive
+    Sky.SkyboxDn = imageFive
+    Sky.SkyboxFt = imageFive
+    Sky.SkyboxLf = imageFive
+    Sky.SkyboxRt = imageFive
+    Sky.SkyboxUp = imageFive
+    wait(0.25)
+    Sky.SkyboxBk = imageSix
+    Sky.SkyboxDn = imageSix
+    Sky.SkyboxFt = imageSix
+    Sky.SkyboxLf = imageSix
+    Sky.SkyboxRt = imageSix
+    Sky.SkyboxUp = imageSix
+    wait(0.25)
+    Sky.SkyboxBk = imageSeven
+    Sky.SkyboxDn = imageSeven
+    Sky.SkyboxFt = imageSeven
+    Sky.SkyboxLf = imageSeven
+    Sky.SkyboxRt = imageSeven
+    Sky.SkyboxUp = imageSeven
+    wait(0.25)
+    Sky.SkyboxBk = imageEight
+    Sky.SkyboxDn = imageEight
+    Sky.SkyboxFt = imageEight
+    Sky.SkyboxLf = imageEight
+    Sky.SkyboxRt = imageEight
+    Sky.SkyboxUp = imageEight
+    wait(0.25)
+end
+  	end    
+})
+ 
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
