@@ -2,7 +2,7 @@
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "private gui super private by anonymous", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Projects Cookies 🍪 [Private Version]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -37,10 +37,10 @@ Name = <string> - The name of the section.
 ]]
 
 OrionLib:MakeNotification({
-	Name = "enjoy fe bypass!!",
+	Name = "enjoy the bypass!",
 	Content = "fe bypass",
 	Image = "rbxassetid://74522217830466",
-	Time = 5
+	Time = 10
 })
 
 --[[
